@@ -1,0 +1,105 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    font-size: 15px;
+    background: #0B0B12;
+    color: #B6B6B6;
+}
+
+/* Container chuẩn */
+.container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Header */
+.site-header {
+    position: sticky;
+    top: 30px;
+    height: 70px;
+    margin: 30px 10%;
+    background: rgba(21, 22, 32, 0.8);
+    color: #B6B6B6;
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgba(142, 68, 173, 0.5);
+
+    /* Mica effect */
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+}
+
+.header-container {
+    justify-content: space-between;
+    margin: auto 5%;
+}
+
+.username {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #B6B6B6;
+    text-decoration: none;
+}
+
+.navbar {
+    font-size: 1rem;
+    display: flex;
+    gap: 80px;
+}
+
+.nav-link {
+    color: #B6B6B6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+/* Main */
+.site-main {
+    padding: 2rem 0;
+}
+
+/* Footer */
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 0;
+    background: #151520;
+    color: #B6B6B6;
+    box-shadow: 0 0 50px rgba(142, 68, 173, 0.5);
+}
+
+.footer-container {
+    margin: auto 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    color: #B6B6B6;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+}
